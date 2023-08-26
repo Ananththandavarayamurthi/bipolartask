@@ -43,7 +43,7 @@ How users can use your project:
 
 1. Start the application: `npm start` or `yarn start`
 2. Access the app in your browser at `http://localhost:3000`
-3. 
+3. https://main--animated-queijadas-89215f.netlify.app/
 
 ## Technologies Used
 
