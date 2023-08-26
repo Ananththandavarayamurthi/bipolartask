@@ -6,8 +6,8 @@ import "./component.css"
 function NoteList() {
     const notes = useSelector(state => state.notes);
   return (
-    <div className='home'>{notes.map(note => (
-        <Note key={note.id} title={note.title} description={note.description} date={note.date} />
+    <div className='home'>{notes.map((note,index) => (
+        <Note key={note.id} title={note.title} description={note.description} date={note.date} id={note.id}  />
       ))}</div>
   )
 }
