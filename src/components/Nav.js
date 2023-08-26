@@ -14,10 +14,10 @@ function Nav() {
     <Badge  color='primary'>
     <AddIcon  />
 	<span >CreateNotes</span>
-				</Badge>
+    </Badge>
         
         </NavLink>
-    <NavLink to="/notes" className="link ">
+    <NavLink to="/noteslist" className="link ">
     <Badge  color='primary'>
     <FormatListBulletedIcon  />
 	<span >Notes</span>
