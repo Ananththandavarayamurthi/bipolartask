@@ -15,6 +15,7 @@
       <BrowserRouter>
       <Provider store={store}>
       <div className="wrapper">
+        <span className='Atspan'>At Notes</span>
       <Nav/>
       <Routes>
         <Route path="/create" element={<CreateNotes/>}/>

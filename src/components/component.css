@@ -6,10 +6,7 @@
 .nav-wrapper{
     position: fixed;
 	background-color: var(--black-color);
-	border: 1px solid var(--black4-color);
-	/* min-width: 23rem;
-	max-width: 23rem; */
-	height: 100vh;
+	height: 500px;
 	z-index: 2137;
 	transition: min-width 0.2s ease;
 
@@ -21,7 +18,7 @@
 		min-width: 20rem;
 		max-width: 20rem;
 	}
-    display: flex;
+    display: grid;
     flex-direction: column;
     margin-top: 6rem;
     padding: 0.5rem;
@@ -30,6 +27,8 @@
     
     color: aqua;
     size:1.3rem;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .home{
@@ -41,10 +40,20 @@
     border-radius: 1rem;
     color: var(--white-color);
     display: grid;
-    font-size: var(--basic-size);
+    font-size: 20px;
     padding: 19.5rem 5rem;
     transition: color .2s ease;
-    padding-left:400px;
+    padding-left:300px;
+}
+.Atspan{
+    font-size: 60px;
+    display: flex;
+    color: aqua;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
 }
 .home1{
     align-items: center;
@@ -58,8 +67,9 @@
     flex-wrap: wrap;
     gap:20px;
     font-size: var(--basic-size);
-    padding: 6rem 5rem;
-    padding-left:400px;
+    padding: 0rem 5rem;
+    padding-left: 399px;
+    margin-top: 19px;
 }
 .link{
     align-items: center;

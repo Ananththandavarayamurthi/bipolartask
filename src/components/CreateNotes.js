@@ -13,8 +13,9 @@ function CreateNotes() {
     height: "40px",
     alignItems: "flex-start", 
     display: "flex", 
-    padding: "5px",
+    padding: "10px",
     width: "400px",
+    marginTop:"12px",
     transition: "box-shadow 0.3s ease-in-out", // Add smooth transition
     '&:hover': {
       boxShadow: "0 0 8px rgba(0, 255, 255, 0.6)", // Box shadow on hover
@@ -22,6 +23,7 @@ function CreateNotes() {
   };
   const inputBaseStyle2 = {
     color: "#00ffff",
+    marginTop:"12px",
     border: "#00ffff solid 0.5px",
     borderRadius: "10px",
     height: "200px",
@@ -52,7 +54,7 @@ function CreateNotes() {
     <div className='home'>
       <form className="formwrap"  onSubmit={handleAddNote}>
         <FormControl variant="outlined" style={{padding:"5px",width:"400px"}}>
-          <InputLabel style={{ color: "#00ffff" ,gap:"2px"}} shrink htmlFor="title-input">
+          <InputLabel style={{ color: "#00ffff"  ,fontSize: "2rem"}} shrink htmlFor="title-input">
             Title
           </InputLabel>
           <InputBase id="title-input"
@@ -60,7 +62,7 @@ function CreateNotes() {
            value={title} onChange={(e) => setTitle(e.target.value)} />
         </FormControl>
         <FormControl variant="outlined" style={{padding:"5px",width:"400px"}}>
-          <InputLabel style={{ color: "#00ffff" ,padding:"2px"}} shrink htmlFor="description-input">
+          <InputLabel style={{ color: "#00ffff" ,fontSize: "2rem"}} shrink htmlFor="description-input">
             Description
           </InputLabel>
           <InputBase id="description-input" 

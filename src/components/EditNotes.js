@@ -23,6 +23,7 @@ function EditNotes() {
   };
   const inputBaseStyle = {
     color: "#00ffff",
+    marginTop:"12px",
     border: "#00ffff solid 0.5px",
     borderRadius: "10px",
     height: "40px",
@@ -37,6 +38,8 @@ function EditNotes() {
   };
   const inputBaseStyle2 = {
     color: "#00ffff",
+    marginTop:"12px",
+    
     border: "#00ffff solid 0.5px",
     borderRadius: "10px",
     height: "200px",
@@ -52,7 +55,7 @@ function EditNotes() {
     <div className='home'>
       <form className="formwrap"  onSubmit={handleUpdateNote}>
         <FormControl variant="outlined" style={{padding:"5px",width:"400px"}}>
-          <InputLabel style={{ color: "#00ffff" ,gap:"2px"}} shrink htmlFor="title-input">
+          <InputLabel style={{ color: "#00ffff" ,fontSize: "2rem"}} shrink htmlFor="title-input">
             Title
           </InputLabel>
           <InputBase id="title-input"
@@ -60,7 +63,7 @@ function EditNotes() {
            value={title} onChange={(e) => setTitle(e.target.value)} />
         </FormControl>
         <FormControl variant="outlined" style={{padding:"5px",width:"400px"}}>
-          <InputLabel style={{ color: "#00ffff" ,padding:"2px"}} shrink htmlFor="description-input">
+          <InputLabel style={{ color: "#00ffff" ,fontSize: "2rem"}} shrink htmlFor="description-input">
             Description
           </InputLabel>
           <InputBase id="description-input" 
