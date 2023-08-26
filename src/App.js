@@ -5,9 +5,12 @@
   import Nav from './components/Nav'
   import CreateNotes from './components/CreateNotes'
   import EditNotes from './components/EditNotes'
+  import Home from "./components/Home"
   import Fav from './components/Fav'
   import NoteList from './components/NoteList'
   import Notesdetails from './components/Notesdetails';
+  import logo from "./img/at-sign-at-svgrepo-com.svg"
+  
   import "./App.css"
 
   function App() {
@@ -15,9 +18,10 @@
       <BrowserRouter>
       <Provider store={store}>
       <div className="wrapper">
-        <span className='Atspan'>At Notes</span>
+        <span className='Atspan'><img src={logo} style={{width:"50px"}}/>At Notes</span>
       <Nav/>
       <Routes>
+        <Route path="/" element={<Home/>}/>
         <Route path="/create" element={<CreateNotes/>}/>
         <Route path="/edit" element={<EditNotes/>}/>
         <Route path="/fav" element={<Fav/>}/>

@@ -20,7 +20,7 @@
 	}
     display: grid;
     flex-direction: column;
-    margin-top: 6rem;
+    
     padding: 0.5rem;
 }
 .nav-wrapper span{
@@ -28,6 +28,7 @@
     color: aqua;
     size:1.3rem;
     display: flex;
+    flex-direction: row;
     justify-content: flex-end;
 }
 
@@ -50,16 +51,14 @@
     display: flex;
     color: aqua;
     width: 100%;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
     
 }
 .home1{
     align-items: center;
     justify-content: center;
     align-items: center;
-    background-color: var(--black3-color);
     border: 1px solid transparent;
     border-radius: 1rem;
     color: var(--white-color);
@@ -70,6 +69,7 @@
     padding: 0rem 5rem;
     padding-left: 399px;
     margin-top: 19px;
+   
 }
 .link{
     align-items: center;
@@ -182,4 +182,26 @@
     width: 70px;
     height: 30px;
     border-radius: 10px;
+}
+.home2{
+    color: #61dafb;
+    display: flex;
+    flex-direction: column;
+    padding: 300px 200px;
+    align-items: center;
+}
+.home2 h1{
+    padding: 20px;
+}
+.home2 p{
+    padding: 20px;
+}
+.home2 button{
+    color: aqua;
+    background-color: black;
+    border: #61dafb solid .5px;
+    border-radius: 10px;
+    width: 20%;
+    height: 30px;
+    min-width: 100px;
 }
