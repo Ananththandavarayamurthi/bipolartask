@@ -7,8 +7,8 @@
     position: fixed;
 	background-color: var(--black-color);
 	border: 1px solid var(--black4-color);
-	min-width: 23rem;
-	max-width: 23rem;
+	/* min-width: 23rem;
+	max-width: 23rem; */
 	height: 100vh;
 	z-index: 2137;
 	transition: min-width 0.2s ease;
@@ -31,6 +31,7 @@
     color: aqua;
     size:1.3rem;
 }
+
 .home{
     align-items: center;
     justify-content: center;
@@ -136,7 +137,7 @@
     font-size: medium;
     color: rgb(3, 106, 106);
     border: #61dafb solid 1px;
-    width: 400px;
+    width: 70%;
     border-radius: 10px;
     height: 100px;
     padding: 10px;

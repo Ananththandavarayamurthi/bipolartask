@@ -7,9 +7,8 @@ import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 
 function Notes({ title, description, date, id,fav  }) {
   const dispatch = useDispatch();
-  const [fava, setFava] = useState();
-  const notes =useSelector(state => state.notes)
-  console.log(notes)
+  
+  
 
   const handleDeleteNote = (id) => {
     dispatch(deleteNote(id));
