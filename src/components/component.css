@@ -5,7 +5,6 @@
 }
 .nav-wrapper{
     position: fixed;
-    
 	background-color: var(--black-color);
 	border: 1px solid var(--black4-color);
 	min-width: 23rem;
@@ -28,7 +27,8 @@
     padding: 0.5rem;
 }
 .nav-wrapper span{
-    color: #a0a0a0;
+    
+    color: aqua;
     size:1.3rem;
 }
 .home{
@@ -43,6 +43,21 @@
     font-size: var(--basic-size);
     padding: 19.5rem 5rem;
     transition: color .2s ease;
+    padding-left:400px;
+}
+.home1{
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--black3-color);
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    color: var(--white-color);
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px;
+    font-size: var(--basic-size);
+    padding: 6rem 5rem;
     padding-left:400px;
 }
 .link{
@@ -93,7 +108,8 @@
     list-style: none;
     padding: 1rem;
     position: relative;
-    width: 100%;
+    width: 70%;
+    max-width: 430px;
     grid-gap: 2.5rem;
     display: flex;
     gap: 2.5rem;
