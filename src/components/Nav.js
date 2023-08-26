@@ -11,14 +11,38 @@ import AddIcon from '@mui/icons-material/Add';
 
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import './component.css';
+import {  FormControl, InputLabel, InputBase } from '@mui/material';
 
-function Nav() {
+function Nav({searchterm ,setSearchTerm}) {
   const notes = useSelector(state => state.notes);
   const [toggle,setToggle]=useState(false)
+  const inputBaseStyle = {
+    color: "#00ffff",
+    border: "#00ffff solid 0.5px",
+    borderRadius: "10px",
+    width: "200px",
+    height:"40px",
+    marginTop:"12px",
+    
+  };
+  
+ 
   return (
     <div>
       <nav className="nav-wrapper" style={toggle?{minWidth:"25rem"}:{minWidth:"4rem"}}>
         <span onClick={()=>{setToggle(!toggle)}}>{toggle?<ArrowCircleLeftIcon color="primary" sx={{ fontSize: 40 }}/>:<ArrowCircleRightIcon color="primary" sx={{ fontSize: 40 }}/>}</span>
+        {toggle?<FormControl variant="outlined" sx={{
+        width: '300px',
+        height: '50px',
+        
+      }} >
+          <InputLabel style={{ color: "#00ffff"  ,fontSize: "2rem"}} shrink htmlFor="title-input">
+            Search...
+          </InputLabel>
+          <InputBase id="title-input"
+           style={inputBaseStyle}
+           value={searchterm} onChange={(e) => setSearchTerm(e.target.value)} />
+        </FormControl>:null}
         <NavLink to="/" className="link" >
           <Tooltip enterDelay={500} leaveDelay={100} arrow title="Create Note" TransitionComponent={Zoom} placement="right">
             <Badge color="primary">
