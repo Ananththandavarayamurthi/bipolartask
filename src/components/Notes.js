@@ -19,8 +19,8 @@ function Notes({ title, description, date,id }) {
       <p className='p1'>{description}</p>
       <p className='p2'>{date}</p>
       <div className="ii">
-				<Link to={`/notes/${id}`}>
-					<button title='Details' className='detailbutton'>Details</button>
+				<Link to={`/updatenotes/${id}`}>
+					<button title='Details' className='detailbutton'>Edit</button>
 				</Link>
 
 				<button  className='detailbutton' onClick={() => handleDeleteNote(id)}>Delete</button>

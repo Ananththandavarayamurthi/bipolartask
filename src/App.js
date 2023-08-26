@@ -7,6 +7,7 @@
   import EditNotes from './components/EditNotes'
   import Fav from './components/Fav'
   import NoteList from './components/NoteList'
+  import Notesdetails from './components/Notesdetails';
   import "./App.css"
 
   function App() {
@@ -20,7 +21,8 @@
         <Route path="/edit" element={<EditNotes/>}/>
         <Route path="/fav" element={<Fav/>}/>
         <Route path="/noteslist" element={<NoteList/>}/>
-        <Route path="/notes/:id" element={<NoteList/>}/>
+        <Route path="/updatenotes/:id" element={<EditNotes/>}/>
+        <Route path="/notes/:id" element={<Notesdetails/>}/>
       </Routes>
       </div>
       </Provider>
