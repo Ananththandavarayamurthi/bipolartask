@@ -65,9 +65,20 @@ const notesSlice = createSlice({
       const idToDelete = action.payload;
       return state.filter(note => note.id !== idToDelete);
     },
+    markAsFavorite: (state, action) => {
+      const note = state.find(note => note.id === action.payload);
+      if (note.fav==="true") {
+        note.fav = "false";
+      }else if(note.fav==="false"){
+        note.fav = "true"
+      }
+    },
+
+    
   },
 });
 
-export const { addNote, editNote, deleteNote } = notesSlice.actions;
+export const { addNote, editNote, deleteNote,markAsFavorite,
+  markAsNotFavorite, } = notesSlice.actions;
 
 export default notesSlice.reducer;
